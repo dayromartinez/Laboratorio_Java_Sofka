@@ -60,12 +60,12 @@ public class Persona {
     }
 
     private char comprobarGenero(char genero){
-        switch (genero){
+        switch (Character.toUpperCase(genero)){
 
             //'O' "otro" hace referencia a un género diferente al masculino o femenino.
             // Este será el género por defecto.
-            case 'H', 'M', 'O': {
-                return genero;
+            case 'F', 'M', 'O': {
+                return Character.toUpperCase(genero);
             }
             default: {
                 this.genero = 'O';
@@ -95,6 +95,7 @@ public class Persona {
 
         return "Esta persona tiene las siguientes características:\n" +
                 "Nombre:'" + this.nombre + '\'' +
+                "; DNI: " + this.DNI +
                 "; Edad: " + this.edad +
                 " años" + mayoredad +
                 "; Género: '" + this.comprobarGenero(this.genero) +

@@ -34,7 +34,7 @@ public class Main {
         Persona persona3 = new Persona();
         persona3.setNombre("Aureliano Buendía");
         persona3.setEdad(15);
-        persona3.setGenero('O');
+        persona3.setGenero('M');
         persona3.setAltura(1.60);
         persona3.setPeso(85.6);
 
